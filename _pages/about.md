@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 技术到底可以积累多少
+subtitle: 读万卷书，行万里路
 
 profile:
   align: right
