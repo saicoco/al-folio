@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 时间会证明
+subtitle: 
 
 # profile:
 #   align: right

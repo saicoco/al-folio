@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: 一直写下去 # the website title (if blank, full name will be used instead)
-first_name: SaiCoCo
+title: TechStack # the website title (if blank, full name will be used instead)
+first_name: Saicoco
 middle_name: R.
 last_name: Writer
 email: jiajiageng@outlook.com
@@ -20,7 +20,7 @@ icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name
 
 icon: 🔥 # the emoji used as the favicon
 url: https://saicoco.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: /al-folio/blog # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -85,8 +85,8 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: 记录技术的saicoco  # your blog must have a name for it to show up in the nav bar
-blog_description: 默默记录技术成长的Blog
+blog_name: Tech Stack  # your blog must have a name for it to show up in the nav bar
+blog_description: 学无止境
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -281,7 +281,7 @@ enable_masonry:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
+enable_darkmode:            false   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  false   # enables categorization of projects into
