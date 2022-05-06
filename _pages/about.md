@@ -2,23 +2,24 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 时间会证明
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   address: >
+#     <p>555 your office number</p>
+#     <p>123 your address street</p>
+#     <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+之前一直在公众号、知乎分享文章，久而久之忘记初心，追逐流量、更新速度。然而写博客的目的是为了看到自己成长，看到有持续的积累，所以重新回到gitblog, 选取了一个较为简洁的主题，后续将持续积累内容在这里。初步计划在当前涉及的领域进行内容的积累，一是回顾总结，二是为做相关领域的伙伴分享经验。涉及的领域包括如下领域：
+- OCR领域：文字检测、文字识别等
+- 视频理解领域：视频标签、视频检索、视频多模态等
+- 其他待定
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+gitblog在百度搜索到的概率很低，其实在google也是如此，希望看到内容的伙伴，能够有所收获！！！
