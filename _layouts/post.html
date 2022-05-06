@@ -53,7 +53,7 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-
+  <!-- 
   {%- if site.disqus_shortname and page.comments -%}
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -68,8 +68,8 @@ layout: default
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
       Disqus.</a></noscript>
-  {%- endif %}
-  <!-- 
+  {%- endif %} -->
+
   {%- if page.comments -%}
   <div id="gitalk-container"></div>
   <script type="text/javascript">
@@ -84,8 +84,8 @@ layout: default
     })
 
     gitalk.render('gitalk-container')
-  </script> -->
-  <!-- {%- endif %} -->
+  </script>
+  {%- endif %}
 
 
 </div>
