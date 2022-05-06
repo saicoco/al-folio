@@ -7,8 +7,8 @@ subtitle: 技术到底可以积累多少
 profile:
   align: right
   image: profile.png
-  address: >
-    <p>Computer Vision</p>
+#   address: >
+#     <p>Computer Vision</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -26,3 +26,4 @@ social: true  # includes social icons at the bottom of the page
 - 其他待定
 
 gitblog在百度搜索到的概率很低，其实在google也是如此，希望看到内容的伙伴，能够有所收获！！！
+
