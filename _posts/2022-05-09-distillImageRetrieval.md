@@ -1,13 +1,11 @@
 ---
 layout: distill
-title: 近似重复视频检索工作
-description: 视频检索与近似重复视频检索区别在哪里，该如何做？
-date: 2022-05-07
-categories: 视频检索
+title: Deep-features下的图像检索做什么
+description: 回顾以前的基于deep-feature图像检索工作，为后续视频检索相关工作做铺垫
+date: 2022-05-09
+categories: 检索
 authors:
   - name: saicoco
-
-bibliography: 2018-12-22-distill.bib
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
@@ -16,16 +14,15 @@ bibliography: 2018-12-22-distill.bib
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Equations
+  - name: 图像检索在做什么
     # if a section has subsections, you can add them as follows:
     # subsections:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
-  - name: Citations
-  - name: Footnotes
-  - name: Code Blocks
-  - name: Layouts
-  - name: Other Typography?
+  - name: 用离线特征做图像检索
+  - name: 端到端fine-tune做图像检索
+  - name: 自监督的方式做图像检索
+
 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -47,10 +44,19 @@ _styles: >
 
 ---
 
-**NOTE:**
-Citations, footnotes, and code blocks do not display correctly in the dark mode since distill does not support the dark mode by default.
-If you are interested in correctly adding dark mode support for distill, please open [a discussion](https://github.com/alshedivat/al-folio/discussions) and let us know.
+**写在前面的话:**
+最近在做视频检索相关的任务，在查找相关文献时，自然的转向图像检索，进而发现图像检索领域涉及内容很多，于是找到近期的survey进行阅读。文章主要讲述与deep-feature相关的方法以及存在的问题，于是进行摘要总结。文章中划分方式较细，此处没有参考文章中的划分方式，而是采用较为粗略的划分，从特征的获取方式入手进行划分。同时，对于涉及到的具体方法对应的文章不做讲述分析，后续涉及到具体方法的使用时再进行详细的描写
 
+## 图像检索在做什么  
+图像检索，是指拿一张图片，去某个图片库里找到你想要的图片。**那么问题来了，什么叫想要的图片？** 以这张二哈为例子
+<div class="fake-img l-gutter">
+  <p>![img](https://tva1.sinaimg.cn/large/e6c9d24ely1h22fjua9n1j20t70mrmy0.jpg)</p>
+</div>
+拿着这张图片去图片库中进行检索时，无外乎以下两种：
+- 查找和这样图片一模一样的图片，只不过图片大小、分辨率不同，或者该图为图库中某张图片的一部分
+- 查找和这张图片同类型的图片，背景、颜色可以不同，但是必须类别为狗或者哈士奇等，类别相同
+
+以上两种分类，第一种叫做instance-level, 必须实例相同，近似或者相同；第二种叫做category level，“类别”相同即可
 
 ## Equations
 
