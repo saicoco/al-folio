@@ -49,16 +49,17 @@ _styles: >
 
 ## 图像检索在做什么  
 图像检索，是指拿一张图片，去某个图片库里找到你想要的图片。**那么问题来了，什么叫想要的图片？** 以这张二哈为例子
-<div class="fake-img l-gutter">
+<div class="fake-img l-body">
   <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h22fjua9n1j20t70mrmy0.jpg" class="img-fluid rounded z-depth-1" %}</p>
-   
 </div>
-
 拿着这张图片去图片库中进行检索时，无外乎以下两种：
 - 查找和这样图片一模一样的图片，只不过图片大小、分辨率不同，或者该图为图库中某张图片的一部分
 - 查找和这张图片同类型的图片，背景、颜色可以不同，但是必须类别为狗或者哈士奇等，类别相同
 
-以上两种分类，第一种叫做instance-level, 必须实例相同，近似或者相同；第二种叫做category level，“类别”相同即可
+以上两种分类，第一种叫做instance-level, 必须实例相同，近似或者相同；第二种叫做category level，“类别”相同即可。相比类别相似的检索，instance-level的检索更具有挑战性，核心的问题主要聚焦于**如何构建具有较强的具有判别性的特征**以及**如何构建具有可迁移性的特征**，这其中主流分为离线特征、在线特征；而从优化方法上，又可以分为监督与“无”监督两种。为了更好的描述这部分内容，采用特征构建的方式进行分别介绍。整体的大纲可以如下图所示：
+<div class="fake-img l-body">
+  <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h22hixx9obj21780h0t9l.jpg" class="img-fluid rounded z-depth-1" %}</p>
+</div>
 
 ## Equations
 
