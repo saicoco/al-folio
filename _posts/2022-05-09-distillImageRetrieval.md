@@ -50,8 +50,10 @@ _styles: >
 ## 图像检索在做什么  
 图像检索，是指拿一张图片，去某个图片库里找到你想要的图片。**那么问题来了，什么叫想要的图片？** 以这张二哈为例子
 <div class="fake-img l-gutter">
-  <p>![img](https://tva1.sinaimg.cn/large/e6c9d24ely1h22fjua9n1j20t70mrmy0.jpg)</p>
+  <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h22fjua9n1j20t70mrmy0.jpg" class="img-fluid rounded z-depth-1" %}</p>
+   
 </div>
+
 拿着这张图片去图片库中进行检索时，无外乎以下两种：
 - 查找和这样图片一模一样的图片，只不过图片大小、分辨率不同，或者该图为图库中某张图片的一部分
 - 查找和这张图片同类型的图片，背景、颜色可以不同，但是必须类别为狗或者哈士奇等，类别相同
