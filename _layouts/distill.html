@@ -104,21 +104,23 @@
     </d-appendix>
 
     {%- if page.comments -%}
-    <div id="gitalk-container"></div>
-    <script type="text/javascript">
-      var gitalk = new Gitalk({
-        clientID: '1e803dd15f34782de6ec',
-        clientSecret: '6220932df14a64d338e0c346ade5b66abaf0993e',
-        repo: 'al-folio',
-        owner: 'saicoco',
-        admin: ['saicoco'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+    <d-contents>
+      <div id="gitalk-container"></div>
+      <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '1e803dd15f34782de6ec',
+          clientSecret: '6220932df14a64d338e0c346ade5b66abaf0993e',
+          repo: 'al-folio',
+          owner: 'saicoco',
+          admin: ['saicoco'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
 
-      gitalk.render('gitalk-container')
-    </script>
+        gitalk.render('gitalk-container')
 
+      </script>
+    </d-contents>
     {%- endif %}
 
   </div>
