@@ -84,7 +84,6 @@ _styles: >
 <div class="fake-img l-body">
   <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23inwvazjj22b30u0n33.jpg" class="img-fluid rounded z-depth-1" %}</p>
 </div>
-</div>
 <div class="caption">图像检索大致流程：包含特征提取、特征聚合、rank等
 </div>
 接下来，我们主要针对离线特征、在线finetune等不同的特征构建方式进行概括描述。
@@ -104,9 +103,7 @@ _styles: >
         {% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23jktljrqj21620u0wgu.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-</div>
-<div class="caption">关注局部特征的抽取方法
-</div>
+<div class="caption">关注局部特征的抽取方法</div>
 上述特征总结如下：
 - MAC与R-MAC：目的在于抽取每个通道内的最大响应值作为当前区域的关键点特征。R-MAC的不同之处在于，将图片切分为多个块，对每一块区域进行最大响应值提取，最终将所有的区域、通道得到的特征拼接，得到最终的离线特征。R-MAC结合CNN，在不同感受野下抽取图片的关键特征，使得特征有很强的判别性。但是R-MAC最终抽取得到的特征与区域块数*通道数有关，当块数以及通道很多的时，特征维度会对应的增加，因此需要PCA等相关的降维操作减少特征的冗余。另外R-MAC抽取特征较为局部，所以对于图片全局的表达能力较局部弱，因此需要搭配对应的特征聚合模块提升特征的表达能力。
 - GeM：是一种比较general的pooling方法，对当前通道内的特征值进行指数变换，将响应较大的特征变得更明显，将响应较低的特征抑制，进而达到提取关键特征的目的。GeM可以提取全局下的关键特征，较R-MAC有一定的优势；GeM的指数因子p需要人为的调整，因此需要不断的观察做出调整，因此后续的工作在系数上做了一些改动。
@@ -115,6 +112,7 @@ _styles: >
 上述的特征可以看作是对CNN已有的特征做进一步加工改造，使得特征可以用作检索任务。但是仅仅利用这些特征去做检索是不够的，这些特征可以看作是基础的特征，直接用作检索存在存储、效率的问题。
 
 为了解决特征的高维度、高冗余带来的存储、检索效率问题，一些工作尝试在聚合、降维等方面对特征进行处理。离线方法如PCA提前将特征降维，在线方法如VLAD系列方法：netVLAD等通过在线聚类的方式，将高维特征映射为这些聚类中心的相关表示。此处涉及公式较多，后续涉及到详细进行分析。
+
 ***
 ### 端到端fine-tune做图像检索
 基于离线特征的检索方法比较直接，寻找开源的模型作为特征提取器，将离线特征存储好作为检索网络的训练、前向等。但是离线特征存在一些问题：
@@ -125,11 +123,12 @@ _styles: >
 <div class="fake-img l-body">
   <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23kvaf2dqj213u0u0q7c.jpg" class="img-fluid rounded z-depth-1" %}</p>
 </div>
-</div>
+
 <div class="caption">classification-based与vertification-based方法汇总
 </div>
 上图除图a，图g为分类任务，后续的任务均在分类任务上加入了metric learning的任务。可以看作是在分类任务的监督下，模型可以关注到类别间的区分特征，在此基础上，加入instance-level的metric learning，使得模型能够关注到更为区分性的特征。这里可实例分割更像，coarse-to-fine。
+
 ***
-以上是从文章<d-cite key="2021Deep">Deep Image Retrieval: A Survey</d-cite>中截取总结的一些内容，更为详细的内容可以阅读文章。文章主要总结了自监督学习之前的图像检索相关的工作以及流程，而自监督学习之后的图像检索任务则与自监督任务十分相关。因为自监督学习为instance-level的学习方式，所以构造正负样本配合自监督学习，可以迁移至检索任务。另外，以上虽然分为离线特征与在线特征两种方式去描述deep-feature如何做图像检索，但是离线特征的方式也可以用在在线finetune阶段，只不过是在不同阶段提出的主要做法。后续会记录一些自监督学习在视频检索、图像检索的工作，算是阶段性的记录，后续翻出来还能回忆起其中的关键点。就写到这里吧～
+以上是从文章Deep Image Retrieval: A Survey<d-cite key="2021Deep"></d-cite>中截取总结的一些内容，更为详细的内容可以阅读文章。文章主要总结了自监督学习之前的图像检索相关的工作以及流程，而自监督学习之后的图像检索任务则与自监督任务十分相关。因为自监督学习为instance-level的学习方式，所以构造正负样本配合自监督学习，可以迁移至检索任务。另外，以上虽然分为离线特征与在线特征两种方式去描述deep-feature如何做图像检索，但是离线特征的方式也可以用在在线finetune阶段，只不过是在不同阶段提出的主要做法。后续会记录一些自监督学习在视频检索、图像检索的工作，算是阶段性的记录，后续翻出来还能回忆起其中的关键点。就写到这里吧～
 
 
