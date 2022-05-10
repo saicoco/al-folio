@@ -81,7 +81,7 @@ _styles: >
 
 以上是对整个大纲的概述，而对于整个检索算法组成而言，下图可以看作是比较完整的一个概括。
 
-<div class="fake-img l-body">
+<div class="fake-img l-page">
   <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23inwvazjj22b30u0n33.jpg" class="img-fluid rounded z-depth-1" %}</p>
 </div>
 <div class="caption">图像检索大致流程：包含特征提取、特征聚合、rank等
@@ -89,19 +89,13 @@ _styles: >
 接下来，我们主要针对离线特征、在线finetune等不同的特征构建方式进行概括描述。
 
 ***
-
 ### 用离线特征做图像检索
 用离线特征做图像检索，指的是利用离线抽取好的特征作为图片的基础特征，再次基础上构建检索算法。因此离线特征的质量对后续的检索算法的至关重要。在CNN刚起步的阶段，大家采用CNN最后一层输出作为离线特征，在使用过程中发现，这类特征语义性较强，与类别相关，但是对于instance级别的区分性较差，同时丢失空间结构信息。于是大家开始寻找能够捕捉空间结构信息的方法。
 
 #### 关键特征的构造与提取
 最近的一些region-based的特征提取方法，大致可以分为feature-level、image-level两种。前者主要在CNN的feature空间维度做关键特征的提取，后者主要通过image输入层处理，通过挖掘图片的局部区域，得到局部特征，这里我们主要描述前者，具体可以用下图展现：
-<div class="row mt-2">
-  <div class="col-sm mt-2 mt-md-0">
-        {% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23jj4se6aj210j0u0wgu.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-2 mt-md-0">
-        {% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23jktljrqj21620u0wgu.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="fake-img l-page">
+  <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23lwtook3j20sv1dpdju.jpg" class="img-fluid rounded z-depth-1" %}</p>
 </div>
 <div class="caption">关注局部特征的抽取方法</div>
 上述特征总结如下：
@@ -120,7 +114,7 @@ _styles: >
 - 即使公开数据与检索数据差异不大，但是离线特征提取相当于将这部分网络冻结，使得这部分得到的特征与应用场景终究有一定的差异。
 
 因此有一些工作尝试通过finetune的方式，提升检索性能。finetune的方式大致可以分为两类，一种为分类为主，即通过在目标数据上进行分类任务的finetune，使得当前模型可以关注到当前数据上的关键信息；另外一种类似metric learning，通过构造正负样本对，学习正样本应该具备的关键特征，进而间接提升检索性能。显而易见，以分类为主的方法，只能学习到区分类别的特征，对于类内样本的区分性不够，因此学习得到的特征较metric learning的方式较弱。大致的做法可以用下图说明：
-<div class="fake-img l-body">
+<div class="fake-img l-page">
   <p>{% include figure.html path="https://tva1.sinaimg.cn/large/e6c9d24ely1h23kvaf2dqj213u0u0q7c.jpg" class="img-fluid rounded z-depth-1" %}</p>
 </div>
 
