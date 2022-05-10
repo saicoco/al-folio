@@ -96,15 +96,7 @@
       {%- endif %}
 
       {{ content }}
-    </d-article>
-
-    <d-appendix>
-      <d-footnote-list></d-footnote-list>
-      <d-citation-list></d-citation-list>
-    </d-appendix>
-
-    {%- if page.comments -%}
-    <d-contents>
+      {%- if page.comments -%}
       <div id="gitalk-container"></div>
       <script type="text/javascript">
         var gitalk = new Gitalk({
@@ -120,8 +112,14 @@
         gitalk.render('gitalk-container')
 
       </script>
-    </d-contents>
-    {%- endif %}
+      {%- endif %}
+
+    </d-article>
+
+    <d-appendix>
+      <d-footnote-list></d-footnote-list>
+      <d-citation-list></d-citation-list>
+    </d-appendix>
 
   </div>
 
