@@ -22,7 +22,7 @@ toc:
     #   - name: Example Child Subsection 2
   - name: 用离线特征做图像检索
   - name: 端到端fine-tune做图像检索
-
+bibliography: 2022-05-09-distillImageRetrieval.bib
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
 _styles: >
