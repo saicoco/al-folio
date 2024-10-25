@@ -37,7 +37,7 @@ _styles: >
 
 大模型输出控制输出json格式，可以使用StrictJson，这个是从TaskGen这篇文章中看到的，github地址是：https://github.com/simbianai/taskgen
 
-## TaskGen
+# TaskGen
 
 ### 做一个agent需要注意的地方
 要想做一个通用的agent，agent就需要适配各种各样的任务，可以通过配置通用常见的函数或者方法，来组合满足不同的任务诉求。而设计这样的agent，需要实现几点：
@@ -63,3 +63,8 @@ agent的任务是能够为当前任务挑选合适的子函数或者方法进行
 1. 自定义实现agent，支持函数定义
 2. 约束json输出
 3. 支持多个agent调用
+
+
+### 使用之后发现
+1. Function相当于是一个简单的llm调用，可以通过<var>的方式指定函数的输入输出
+2. Function中的文档或者函数说明，也就是llm的prompt
