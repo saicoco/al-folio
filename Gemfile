@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'bundler', '~> 2.5'
 group :jekyll_plugins do
     gem 'jekyll'
     gem 'jekyll-archives'
