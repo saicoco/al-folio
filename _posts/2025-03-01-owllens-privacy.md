@@ -1,8 +1,6 @@
 ---
 layout: page
 title: OwlLens隐私政策声明
-date: 2025-03-01
-categories: [privacy]
 ---
 
 ### 引言
