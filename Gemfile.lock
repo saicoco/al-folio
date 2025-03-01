@@ -257,7 +257,7 @@ DEPENDENCIES
   htmlbeautifier
   htmlcompressor
   httparty
-  jekyll
+  jekyll (~> 4.4.1)
   jekyll-archives
   jekyll-diagrams
   jekyll-email-protect
@@ -265,6 +265,7 @@ DEPENDENCIES
   jekyll-github-metadata
   jekyll-imagemagick
   jekyll-paginate-v2
+  jekyll-sass-converter (= 3.1.0)
   jekyll-scholar
   jekyll-sitemap
   jekyll-target-blank
