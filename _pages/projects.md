@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 优雅的应用与工具集，记录我的开发之旅
 nav: true
 display_categories: [work, fun]
 horizontal: false
