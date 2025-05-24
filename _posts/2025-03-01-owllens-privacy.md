@@ -1,57 +1,57 @@
 ---
 layout: page
-title: OwlLens隐私政策声明
+title: OwlLens Privacy Policy Statement
 ---
 
-### 引言
-本隐私政策旨在帮助您了解我们的软件（以下简称"OwlLens"）如何处理您的信息。我们深知隐私对您的重要性，并承诺提供完全透明的隐私保护措施。
+### Introduction
+This privacy policy is intended to help you understand how our software ("OwlLens") handles your information. We understand the importance of privacy and are committed to providing complete transparency in our privacy protection measures.
 
-### 信息收集与使用
+### Information Collection and Use
 
-#### 我们收集的信息
-OwlLens 不会收集任何个人信息，包括但不限于：
-- 个人身份信息
-- 位置信息
-- 使用数据
-- 设备信息
-- 网络数据
+#### Information We Collect
+OwlLens does not collect any personal information, including but not limited to:
+- Personal identification information
+- Location information
+- Usage data
+- Device information
+- Network data
 
-#### 图片访问
-- 仅在您使用图片处理功能时，经您明确授权后访问指定图片
-- 图片处理仅在设备本地进行
-- 处理完成后不会保留任何原始或处理后的图片副本
+#### Image Access
+- Images are accessed only when you use image processing features and only after your explicit authorization
+- All image processing is performed locally on your device
+- No copies of original or processed images are retained after processing is complete
 
-### 数据处理原则
+### Data Processing Principles
 
-#### 完全离线运行
-- OwlLens 设计为完全离线运行模式
-- 不需要互联网连接
-- 不会进行任何形式的数据传输或上传
+#### Fully Offline Operation
+- OwlLens is designed to operate fully offline
+- No internet connection is required
+- No data transmission or upload of any kind occurs
 
-#### 数据存储
-- 不会在本地持久化存储任何用户数据
-- 所有处理都在内存中临时进行
-- 应用关闭后自动清除所有临时数据
+#### Data Storage
+- No user data is persistently stored locally
+- All processing is performed temporarily in memory
+- All temporary data is automatically cleared when the application is closed
 
-#### 第三方访问
-- 不与任何第三方共享数据
-- 不集成任何第三方分析工具
-- 不使用任何跟踪技术
+#### Third-Party Access
+- No data is shared with any third parties
+- No third-party analytics tools are integrated
+- No tracking technologies are used
 
-### 儿童隐私
-我们的应用不会有意收集 13 岁以下儿童的任何个人信息。
+### Children's Privacy
+Our application does not knowingly collect any personal information from children under the age of 13.
 
-### 您的权利
-您对您的隐私拥有完全的控制权：
-- 可以随时授予或撤销文件访问权限
-- 可以随时删除应用及其所有数据
-- 可以通过系统设置管理应用权限
+### Your Rights
+You have full control over your privacy:
+- You can grant or revoke file access permissions at any time
+- You can delete the app and all its data at any time
+- You can manage app permissions through system settings
 
-### 隐私政策更新
-我们可能会不时更新本隐私政策。更新后的版本将在应用商店页面发布，并在应用内提供链接访问。
+### Privacy Policy Updates
+We may update this privacy policy from time to time. The updated version will be published on the app store page and a link will be provided within the app.
 
-### 联系我们
-如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：
-- 邮箱：jiajiageng2025@163.com
+### Contact Us
+If you have any questions or suggestions regarding this privacy policy, please contact us at:
+- Email: jiajiageng2025@163.com
 
-最后更新日期：2025-03-01
+Last updated: 2025-03-01
