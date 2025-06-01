@@ -37,18 +37,20 @@ Discover your photos like never before! OwlLens is a powerful offline image retr
 
 ### ✨ Core Features
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens_eng/4.png" title="Natural Language Search" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens_eng/5.png" title="Search by Image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens_eng/6.png" title="batch-image-search" class="img-fluid rounded z-depth-1" %}
+<div class="l-screen-inset">
+    <div class="row">
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/owlLens_eng/4.png" title="Natural Language Search" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/owlLens_eng/5.png" title="Search by Image" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/owlLens_eng/6.png" title="batch-image-search" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
 </div>
-<div class="caption">
+<div class="caption text-center">
     Left: Quickly find images using natural language descriptions; Middle: Search for similar photos with an example image; Right: Supports batch image retrieval
 </div>
 
