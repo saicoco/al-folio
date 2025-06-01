@@ -7,7 +7,6 @@ importance: 1
 category: app
 ---
 
-## 🌟 Product Highlights
 
 <div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -16,6 +15,8 @@ category: app
         </a>
     </div>
 </div>
+
+## 🌟 Product Highlights
 
 Discover your photos like never before! OwlLens is a powerful offline image retrieval tool that makes it easy to manage and find your photos.
 
@@ -26,19 +27,6 @@ Discover your photos like never before! OwlLens is a powerful offline image retr
 </div>
 <div class="caption">
     A clean and elegant user interface design for a smooth user experience
-</div>
-
-### 🎥 Preview Video
-<div class="row justify-content-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <video class="img-fluid rounded z-depth-1" controls preload="metadata" poster="assets/img/owlLens_eng/video_poster.png">
-            <source src="assets/img/owlLens_eng/video_audio_v2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</div>
-<div class="caption text-center">
-    Watch how OwlLens makes photo management effortless and intelligent
 </div>
 
 ### ✨ Core Features
