@@ -9,7 +9,13 @@ category: app
 
 ## 🌟 Product Highlights
 
-**APP Store Preview**: https://apps.apple.com/us/app/owllens/id6746360832
+<div class="row justify-content-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <a href="https://apps.apple.com/us/app/owllens/id6746360832" target="_blank" class="btn btn-primary btn-lg btn-block" style="background-color: #007AFF; border-color: #007AFF;">
+            <i class="fab fa-app-store-ios"></i> Download on the Mac App Store
+        </a>
+    </div>
+</div>
 
 Discover your photos like never before! OwlLens is a powerful offline image retrieval tool that makes it easy to manage and find your photos.
 
