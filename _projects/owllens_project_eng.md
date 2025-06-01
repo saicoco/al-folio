@@ -21,15 +21,15 @@ Discover your photos like never before! OwlLens is a powerful offline image retr
 </div>
 
 ### 🎥 Preview Video
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <video class="img-fluid rounded z-depth-1" controls>
+<div class="row justify-content-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <video class="img-fluid rounded z-depth-1" controls preload="metadata" poster="assets/img/owlLens_eng/video_poster.png">
             <source src="assets/img/owlLens_eng/video_audio_v2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 </div>
-<div class="caption">
+<div class="caption text-center">
     Watch how OwlLens makes photo management effortless and intelligent
 </div>
 
@@ -37,15 +37,23 @@ Discover your photos like never before! OwlLens is a powerful offline image retr
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens_eng/1.png" title="Natural Language Search" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/owlLens_eng/4.png" title="Natural Language Search" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens_eng/2.png" title="Search by Image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/owlLens_eng/5.png" title="Search by Image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/owlLens_eng/6.png" title="batch-image-search" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Left: Quickly find images using natural language descriptions; Middle: Search for similar photos with an example image; Right: Supports batch image retrieval
 </div>
+
+- **Intelligent Understanding**: Advanced AI models comprehend your search intent
+- **Flexible Queries**: Search using everyday language, no need for specific keywords
+- **Visual Similarity**: Find photos with similar visual elements
+- **Efficient Management**: Process multiple images simultaneously
 
 ### 🔒 Privacy First
 - **Fully offline**: Built-in AI models, no internet required
@@ -59,7 +67,7 @@ Discover your photos like never before! OwlLens is a powerful offline image retr
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/owlLens/load_dir.png" title="Import Demo" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/owlLens_eng/7.png" title="Import Demo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
